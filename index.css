@@ -262,6 +262,75 @@ section {
   width: 100%;
 }
 
+.project-section{
+  height: 100vh;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project{
+  display: flex;
+  gap: 2rem;
+}
+
+.project-section .title h1{
+  font-size: 3em;
+}
+
+.project .card .card-images{
+  max-width: 20rem;
+}
+.project .card{
+  background-color: #ffffff;
+  max-width: 20rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 2px;
+}
+
+.project .card .card-title h3{
+  font-size: 1.5em;
+  color: #03001C;
+}
+
+.project .card .card-tech p{
+  color: #5B8FB9;
+  font-size: 0.9em;
+  color: #03001C;
+  margin-bottom: 1rem;
+}
+
+.project .card .card-images img{
+  width: 100%;
+}
+
+.project .card .btn-card{
+  display: flex;
+  gap: 1rem;
+}
+
+.project .card .btn-card button{
+  width: 8rem;
+  height: 2rem;
+}
+
+.project .card .btn-card button:nth-of-type(1){
+  background-color: #5B8FB9;
+  border: 1px solid #03001C;
+  color: #ffffff;
+}
+
+.project .card .btn-card button:nth-of-type(2){
+  background-color: #03001C;
+  border: 1px solid #5B8FB9;
+  color: #ffffff;
+}
+
+
+
+
 
 @media (max-width: 576px){
 
@@ -396,6 +465,34 @@ section {
   .skills-section .images{
       margin: 1rem 3rem;
   }
+
+  .project-section{
+    height: 100%;
+    margin: 1rem;
+  }
+
+  .project-section .title h1{
+    font-size: 1.5em;
+  }
+
+  .project{
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .project .card .card-title h3{
+    font-size: 1.2em;
+  }
+
+  .project .card .card-tech p{
+    font-size: 0.8em;
+  }
+
+  .project .card .btn-card button{
+    width: 6rem;
+    height: 1.8rem;
+    font-size: 0.7em;
+  }
 }
 
 @media (min-width: 576px) and (max-width:768px){
@@ -479,6 +576,28 @@ section {
   .skills-section .text h1{
       font-size: 2.5em;
   }
+
+  .project-section{
+    height: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 35rem;
+  }
+
+  .project{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .project-section .title h1{
+    font-size: 2em;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px){
@@ -504,5 +623,18 @@ section {
 
   .skills-section .images{
       padding: 1rem 2rem;
+  }
+
+  .project-section{
+  }
+
+  .project{
+    gap: 1rem;
+  }
+
+  .project .card .btn-card button{
+    width: 7rem;
+    height: 1.8rem;
+    font-size: 0.7em;
   }
 }
